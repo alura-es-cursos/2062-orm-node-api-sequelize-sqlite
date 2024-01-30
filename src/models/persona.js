@@ -12,6 +12,7 @@ module.exports = (sequelize, DataTypes) => {
 
       Persona.hasMany(models.Matricula, {
         foreignKey: 'estudiante_id',
+        as: 'cursosMatriculados',
       });
     }
   }
